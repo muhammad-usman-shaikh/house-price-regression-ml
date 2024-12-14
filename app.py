@@ -137,7 +137,7 @@ def plot_graph(house_sizes, house_prices, model):
     
     # Customizing y-axis labels
     def format_price(x, pos):
-        return f"${x:,.0f}"  # Format as a dollar amount with commas and no decimals
+        return f"{x:,.0f}"  # Format as a dollar amount with commas and no decimals
 
     plt.gca().yaxis.set_major_formatter(FuncFormatter(format_price))
     
@@ -146,8 +146,8 @@ def plot_graph(house_sizes, house_prices, model):
 
     # Ensuring that everything fits without cutting off labels
     plt.title('Linear Regression - House Size vs Price')
-    plt.xlabel('House Size (sqft)')
-    plt.ylabel('Price ($)')
+    plt.xlabel('House Size (sq yard)')
+    plt.ylabel('Price (PKR)')
     plt.legend()
     
     # Adjust layout to avoid cutting off any content
